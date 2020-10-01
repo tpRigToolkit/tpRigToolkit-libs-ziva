@@ -1,0 +1,3 @@
+include versioneer.py
+include tpRigToolkit/libs/ziva/__logging__.ini
+include tpRigToolkit/libs/ziva/_version.py
