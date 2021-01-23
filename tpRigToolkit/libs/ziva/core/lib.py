@@ -40,7 +40,7 @@ class ZivaLib(library.DccLibrary, object):
     @classmethod
     def load(cls):
         ziva_utils_folder = path_utils.clean_path(
-            os.path.join(os.path.dirname(os.path.dirname(__file__)), 'scripts', 'ziva-vfx-utils'))
+            os.path.join(os.path.dirname(os.path.dirname(__file__)), '__scripts__', 'ziva-vfx-utils'))
         if os.path.isdir(ziva_utils_folder) and ziva_utils_folder not in sys.path:
             sys.path.append(ziva_utils_folder)
 
