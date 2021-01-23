@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 
 """
-Module that contains functions to workf with Ziva bones
+Module that contains functions to work with Ziva bones
 """
 
 from __future__ import print_function, division, absolute_import
 
-import tpDcc.dccs.maya as maya
+import maya.cmds
+import maya.mel
 
 
 def is_bone(mesh):

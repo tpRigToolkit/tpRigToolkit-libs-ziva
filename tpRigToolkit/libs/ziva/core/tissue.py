@@ -7,7 +7,8 @@ Module that contains functions to workf with Ziva tissues
 
 from __future__ import print_function, division, absolute_import
 
-import tpDcc.dccs.maya as maya
+import maya.cmds
+import maya.mel
 
 
 def is_tissue(mesh):
