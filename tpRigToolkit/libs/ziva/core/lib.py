@@ -40,10 +40,10 @@ class ZivaLib(library.DccLibrary, object):
 
 def create_logger(dev=False):
     """
-    Creates logger for current tpDcc-libs-resources package
+    Creates logger for current tpRigToolkit-libs-ziva package
     """
 
-    logger_directory = os.path.normpath(os.path.join(os.path.expanduser('~'), 'tpDcc', 'logs', 'libs'))
+    logger_directory = os.path.normpath(os.path.join(os.path.expanduser('~'), 'tpRigToolkit', 'logs', 'libs'))
     if not os.path.isdir(logger_directory):
         os.makedirs(logger_directory)
 

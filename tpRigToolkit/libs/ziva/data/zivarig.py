@@ -11,7 +11,7 @@ import os
 import re
 import logging
 
-from zBuilder.builders import ziva
+# from zBuilder.builders import ziva
 
 from tpDcc.core import dcc as core_dcc
 from tpDcc.libs.datalibrary.core import datapart
@@ -29,7 +29,7 @@ class ZivaRigData(datapart.DataPart):
     PRIORITY = 15
     EXTENSION = '.zBuilder'
 
-    _has_trait = re.compile('\.zBuilder', re.I)
+    _has_trait = re.compile(r'\.zBuilder', re.I)
 
     @classmethod
     def can_represent(cls, identifier, only_extension=False):
